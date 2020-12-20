@@ -6,7 +6,7 @@ driver = webdriver.ChromeOptions()
 driver.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 driver.add_argument("--headless")
 driver.add_argument("--no-sandbox")
-driver.add_argument("--disable-dev-sh-usage")
+driver.add_argument("--disable-dev-shm-usage")
 
 driver1 = webdriver.Chrome(executable_path= os.environ.get("CHROMEDRIVER_PATH"), chrome_options=driver)
 driver2 = webdriver.Chrome(executable_path= os.environ.get("CHROMEDRIVER_PATH"), chrome_options=driver)

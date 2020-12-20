@@ -2,7 +2,7 @@ import os
 from selenium import webdriver
 from time import sleep
 
-driver = webdriver.ChromeOption()
+driver = webdriver.ChromeOptions()
 driver.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 driver.add_argument("--headless")
 driver.add_argument("--no-sandbox")
